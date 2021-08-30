@@ -12,7 +12,7 @@ const App = () => {
         <div className="nav">
           <Sidebar />
         </div>
-        <div className="content">
+        <div className="app-wrapper-content">
           <Switch>
             <Route exact path="/" render={() => <Redirect to={"/home"} />} />
             <Route path="/home" component={Home} />
