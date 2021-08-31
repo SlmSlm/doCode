@@ -1,7 +1,7 @@
 nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: inline-block;
+  position: relative;
+  height: 100%;
 }
 nav a {
   text-decoration: none;
@@ -18,7 +18,8 @@ nav a {
   content: "●";
 }
 
-/* .profileItem {
-  align-items: flex-end;
+.profileItem {
+  display: block;
+  position: absolute;
   bottom: 0;
-} */
+}

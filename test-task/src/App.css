@@ -8,7 +8,9 @@
 }
 
 .nav {
+  display: inline-block;
   grid-area: nav;
+  min-height: 500px;
   padding: 20px;
   border-right: 1px solid #fff;
 }
