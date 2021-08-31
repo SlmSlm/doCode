@@ -11,16 +11,19 @@ const Accounts = () => {
             <div className={styles.item}>Euro</div>
           </NavLink>
         </div>
+
         <div className={styles.accountsItem}>
           <NavLink to="/home/gbp" activeClassName={styles.active}>
             <div className={styles.item}>British Sterling</div>
           </NavLink>
         </div>
+
         <div className={styles.accountsItem}>
           <NavLink to="/home/usd" activeClassName={styles.active}>
             <div className={styles.item}>Usd</div>
           </NavLink>
         </div>
+
         <div className={styles.accountsItem}>
           <NavLink to="/home/krw" activeClassName={styles.active}>
             <div className={styles.item}>KRW</div>

@@ -1,4 +1,9 @@
-.menuItem a {
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+nav a {
   text-decoration: none;
   color: black;
 }
@@ -12,3 +17,8 @@
 .menuItem a.active::before {
   content: "●";
 }
+
+/* .profileItem {
+  align-items: flex-end;
+  bottom: 0;
+} */

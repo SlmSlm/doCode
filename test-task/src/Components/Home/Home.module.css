@@ -1,0 +1,14 @@
+.homePage {
+  display: flex;
+  justify-content: space-between;
+}
+
+.heading {
+  margin: 2% 0 5% 5%;
+}
+
+.accountsBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

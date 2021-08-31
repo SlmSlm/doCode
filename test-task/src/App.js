@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 import "./App.css";
-import Home from "./Components/Content/Home";
+import Home from "./Components/Home/Home";
 import SendMoney from "./Components/SendMoney/SendMoney";
 import Sidebar from "./Components/Sidebar/Sidebar";
 

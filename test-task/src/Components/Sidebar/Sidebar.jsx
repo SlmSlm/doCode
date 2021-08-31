@@ -6,13 +6,12 @@ import accountsIcon from "../../Images/SidebarIcons/accounts-icon.svg";
 import homeIcon from "../../Images/SidebarIcons/home-icon.svg";
 import sendMoneyIcon from "../../Images/SidebarIcons/send-money-icon.svg";
 import topUpIcon from "../../Images/SidebarIcons/top-up-icon.svg";
-import userPhoto from "../../Images/userPhoto.svg";
+import userPhoto from "../../Images/UsersPhoto/profilePhoto.svg";
 
 const Sidebar = () => {
   return (
     <nav>
-      <img src={logo} alt="logo" />
-
+      <img src={logo} alt="logo" style={{ width: 40 }} />
       <div className={styles.menuItem}>
         <NavLink to="/home" activeClassName={styles.active}>
           <img src={homeIcon} alt="icon" /> Home
@@ -37,7 +36,7 @@ const Sidebar = () => {
         </NavLink>
       </div>
 
-      <div className={styles.menuItem}>
+      <div className={styles.profileItem}>
         <NavLink to="/profile" activeClassName={styles.active}>
           <img src={userPhoto} alt="icon" /> Profile
         </NavLink>
