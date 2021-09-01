@@ -4,6 +4,7 @@ import "./App.css";
 import Home from "./Components/Home/Home";
 import SendMoney from "./Components/SendMoney/SendMoney";
 import Sidebar from "./Components/Sidebar/Sidebar";
+import state from "./Api/api";
 
 const App = () => {
   return (
@@ -15,7 +16,7 @@ const App = () => {
         <div className="app-wrapper-content">
           <Switch>
             <Route exact path="/" render={() => <Redirect to={"/home"} />} />
-            <Route path="/home" component={Home} />
+            <Route path="/home" render={()=><Home state={state}/>} />
             <Route path="/send-money" component={SendMoney} />
           </Switch>
         </div>

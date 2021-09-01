@@ -1,22 +1,23 @@
 import React from "react";
-import styles from "./WalletInfo.module.css";
-import topUpRedIcon from "../../Images/RedColorIcons/topUpRedIcon.svg";
-import sendMoneyImg from "../../Images/RedColorIcons/sendMoneyRedIcon.svg";
-import leoAva from "../../Images/UsersPhoto/leoUser.svg";
-import monikaAva from "../../Images/UsersPhoto/monikaUser.svg";
+import { NavLink } from "react-router-dom";
+import pig from "../../Images/blackPig.svg";
 import checkbox from "../../Images/checkbox.png";
 import coins from "../../Images/coins.svg";
-import pig from "../../Images/blackPig.svg";
+import sendMoneyImg from "../../Images/RedColorIcons/sendMoneyRedIcon.svg";
+import topUpRedIcon from "../../Images/RedColorIcons/topUpRedIcon.svg";
+import leoAva from "../../Images/UsersPhoto/leoUser.svg";
+import monikaAva from "../../Images/UsersPhoto/monikaUser.svg";
 import UsersAvatars from "../../Images/UsersPhoto/profilePhoto.svg";
-import { NavLink } from "react-router-dom";
+import { Balance } from "../Accounts/AccoutsItems";
+import styles from "./WalletInfo.module.css";
 
-const WalletInfo = () => {
+const WalletInfo = (props) => {
   return (
     <div className={styles.WalletInfoBlock}>
       <div className={styles.rowDirection + " " + styles.headingOfBlock}>
         <div>
           <div>Balance</div>
-          <div>£10.00</div>
+          <h2>{Balance}</h2>
           <div>Quick Transaction</div>
         </div>
         <div className={styles.topUpIcon}>
