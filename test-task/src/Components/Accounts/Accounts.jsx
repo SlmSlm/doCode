@@ -4,7 +4,7 @@ import AccountsItems from "./AccoutsItems";
 const Accounts = (props) => {
   return (
     <div>
-      <AccountsItems state={props.state}/>
+      <AccountsItems state={props.state} />
     </div>
   );
 };

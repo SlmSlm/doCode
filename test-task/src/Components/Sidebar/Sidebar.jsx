@@ -1,12 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import styles from "./Sidebar.module.css";
 import logo from "../../Images/logo.svg";
 import accountsIcon from "../../Images/SidebarIcons/accounts-icon.svg";
 import homeIcon from "../../Images/SidebarIcons/home-icon.svg";
 import sendMoneyIcon from "../../Images/SidebarIcons/send-money-icon.svg";
 import topUpIcon from "../../Images/SidebarIcons/top-up-icon.svg";
 import userPhoto from "../../Images/UsersPhoto/profilePhoto.svg";
+import styles from "./Sidebar.module.css";
 
 const Sidebar = () => {
   return (

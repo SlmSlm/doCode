@@ -13,6 +13,7 @@
   min-height: 500px;
   padding: 20px;
   border-right: 1px solid #fff;
+  cursor: pointer;
 }
 
 .app-wrapper-content {

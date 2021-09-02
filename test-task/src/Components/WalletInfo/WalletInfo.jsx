@@ -11,7 +11,7 @@ import UsersAvatars from "../../Images/UsersPhoto/profilePhoto.svg";
 import { Balance } from "../Accounts/AccoutsItems";
 import styles from "./WalletInfo.module.css";
 
-const WalletInfo = (props) => {
+const WalletInfo = () => {
   return (
     <div className={styles.WalletInfoBlock}>
       <div className={styles.rowDirection + " " + styles.headingOfBlock}>
