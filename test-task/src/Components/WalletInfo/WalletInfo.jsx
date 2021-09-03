@@ -11,9 +11,12 @@ import UsersAvatars from "../../Images/UsersPhoto/profilePhoto.svg";
 import { Balance } from "../Accounts/AccoutsItems";
 import styles from "./WalletInfo.module.css";
 
-const WalletInfo = () => {
+const WalletInfo = (props) => {
+let stateCopy = props.testState;
+
   return (
     <div className={styles.WalletInfoBlock}>
+      <div>{stateCopy.content}</div>
       <div className={styles.rowDirection + " " + styles.headingOfBlock}>
         <div>
           <div>Balance</div>

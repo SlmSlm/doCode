@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
+import testState from "../../Store/acoountsReducer";
 import AccountsItems from "./AccoutsItems";
 
-const Accounts = (props) => {
+function Accounts(props) {
   return (
     <div>
       <AccountsItems state={props.state} />
     </div>
   );
-};
+}
 
 export default Accounts;

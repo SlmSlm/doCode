@@ -1,8 +1,9 @@
 import React, { useState } from "react";
+import { rerenderEntireTree } from "../../rerender";
 import styles from "./AccountsItems.module.css";
 
 export let Balance = "Choose your account";
-
+export let lal = null;
 function Account(props) {
   const [appState, changeState] = useState({
     state: props.state,
@@ -11,16 +12,15 @@ function Account(props) {
   });
 
   function toggleActive(index) {
-    debugger;
     changeState({
       ...appState,
       onSelect: appState.state[index],
       balanceInfo: appState.state[index].symbol + appState.state[index].balance,
     });
+    rerenderEntireTree();
   }
 
   function toggleActiveStyles(index) {
-    debugger;
     if (
       appState.state[index] === appState.onSelect &&
       appState.state[index].symbol + appState.state[index].balance ===
@@ -53,7 +53,6 @@ function Account(props) {
           </div>
         ))}
       </div>
-      <h2>{Balance}</h2>
     </div>
   );
 }

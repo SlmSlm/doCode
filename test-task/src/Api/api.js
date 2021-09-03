@@ -1,10 +1,10 @@
 // import * as axios from "axios";
 import eurIcon from "../Images/CurrencyIcons/eur.svg";
 import gbpIcon from "../Images/CurrencyIcons/gbp.svg";
-import usdIcon from "../Images/CurrencyIcons/usd.svg";
 import krwIcon from "../Images/CurrencyIcons/krw.png";
+import usdIcon from "../Images/CurrencyIcons/usd.svg";
 
-const state = {
+const resp = {
   accounts: [
     {
       title: "Euro (EUR)",
@@ -41,7 +41,7 @@ const state = {
   },
 };
 
-export default state;
+export default resp;
 
 // const instanceDate = axios.create({
 //   withCredentials: true,
