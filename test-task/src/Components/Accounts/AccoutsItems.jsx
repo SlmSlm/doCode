@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import { rerenderEntireTree } from "../../rerender";
 import styles from "./AccountsItems.module.css";
 
-export let Balance = "Choose your account";
-export let lal = null;
+export let Balance = "Choose your acc";
 function Account(props) {
   const [appState, changeState] = useState({
     state: props.state,

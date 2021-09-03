@@ -49,6 +49,16 @@
   border-radius: 30px;
 }
 
+.lastSeenUsers img {
+  display: block;
+  margin: 0 auto;
+}
+
+.rowDirection a:hover {
+  color: #fd3a6c;
+  border: 1px solid #fd3a6c;
+}
+
 .rowDirection a {
   display: flex;
   flex-direction: column;
@@ -57,15 +67,9 @@
   background-color: #f8f8f8;
   margin: 10% 2% 0 2%;
   padding: 20px;
-  border: 1px solid #fd3a6c;
+  border: 1px solid #b5b5b5;
   text-decoration: none;
-  color: #fd3a6c;
   border-radius: 30px;
-}
-
-.lastSeenUsers img {
-  display: block;
-  margin: 0 auto;
 }
 
 .table {

@@ -10,11 +10,11 @@ const Home = (props) => {
       <div className={styles.accountsBlock}>
         <div className={styles.heading}>
           Your accounts:
-          <Accounts state={props.state} testState={props.testState}  />
+          <Accounts state={props.state} />
         </div>
         <Options />
       </div>
-      <WalletInfo state={props.state} testState={props.testState}  />
+      <WalletInfo state={props.state} />
     </div>
   );
 };

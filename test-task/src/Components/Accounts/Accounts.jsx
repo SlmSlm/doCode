@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import testState from "../../Store/acoountsReducer";
+import React from "react";
 import AccountsItems from "./AccoutsItems";
 
 function Accounts(props) {

@@ -5,7 +5,6 @@ import "./App.css";
 import Home from "./Components/Home/Home";
 import SendMoney from "./Components/SendMoney/SendMoney";
 import Sidebar from "./Components/Sidebar/Sidebar";
-import testState from "./Store/acoountsReducer";
 
 const App = () => {
   return (
@@ -17,12 +16,7 @@ const App = () => {
         <div className="app-wrapper-content">
           <Switch>
             <Route exact path="/" render={() => <Redirect to={"/home"} />} />
-            <Route
-              path="/home"
-              render={() => (
-                <Home state={state} testState={testState} />
-              )}
-            />
+            <Route path="/home" render={() => <Home state={state} />} />
             <Route
               path="/send-money"
               render={() => <SendMoney state={state} />}
